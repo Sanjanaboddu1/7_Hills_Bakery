@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="7 Hills Bakery - Fresh cakes, pastries, puffs, biscuits, and more. Perfect for snacks, parties, and celebrations.">
+    <title>7 Hills Bakery | Freshly Baked Happiness</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">7 Hills <span>Bakery</span></a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg-icons">
+            <i class="fas fa-cookie-bite icon1"></i>
+            <i class="fas fa-bread-slice icon2"></i>
+            <i class="fas fa-birthday-cake icon3"></i>
+            <i class="fas fa-pizza-slice icon4"></i>
+            <i class="fas fa-hamburger icon5"></i>
+        </div>
+        <div class="container hero-content fade-in">
+            <h1>Freshly Baked Happiness at 7 Hills Bakery</h1>
+            <p>Where every bite brings joy, freshness, and flavor.</p>
+            <div class="hero-buttons">
+                <a href="#menu" class="btn btn-primary">Explore Menu</a>
+                <a href="https://wa.me/919032326119" target="_blank" class="btn btn-secondary">
+                    <i class="fab fa-whatsapp"></i> Order on WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container fade-in">
+            <div class="about-text">
+                <h2>Welcome to 7 Hills Bakery!</h2>
+                <p>We serve fresh cakes, pastries, puffs, biscuits, breads, snacks, and many more treats.<br>Everything is baked daily with quality ingredients and authentic taste.<br>Perfect for snacks, parties, and celebrations.</p>
+            </div>
+            
+            <div class="why-choose-us">
+                <h3>Why Choose Us</h3>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <i class="fas fa-sun"></i>
+                        <h4>Fresh daily<br>baked items</h4>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-pump-soap"></i>
+                        <h4>Hygienic<br>kitchen</h4>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-tags"></i>
+                        <h4>Affordable<br>pricing</h4>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-boxes"></i>
+                        <h4>Wide<br>variety</h4>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-glass-cheers"></i>
+                        <h4>Perfect for<br>parties</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu bg-light">
+        <div class="container fade-in">
+            <div class="section-header">
+                <h2>Our Freshly Baked Menu</h2>
+                <p>Explore our wide variety of treats made with love</p>
+            </div>
+            
+            <div class="menu-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="puffs">Puffs & Snacks</button>
+                <button class="filter-btn" data-filter="cakes">Cakes & Pastries</button>
+                <button class="filter-btn" data-filter="breads">Breads & Biscuits</button>
+                <button class="filter-btn" data-filter="specials">Specials</button>
+            </div>
+
+            <div class="menu-grid">
+                <!-- Puffs -->
+                <div class="menu-category" data-category="puffs">
+                    <h3>Puffs</h3>
+                    <ul>
+                        <li>Half egg puffs</li>
+                        <li>Full egg puffs</li>
+                        <li>Curry puffs</li>
+                        <li>Paneer puffs</li>
+                        <li>Chicken puffs</li>
+                        <li>Sweet Puffs</li>
+                    </ul>
+                </div>
+                
+                <!-- Burgers & Hotdogs -->
+                <div class="menu-category" data-category="puffs">
+                    <h3>Burgers & Hotdogs</h3>
+                    <ul>
+                        <li>Veg burger</li>
+                        <li>Paneer burger</li>
+                        <li>Chicken burger</li>
+                        <li>Veg hotdog roll</li>
+                        <li>Paneer hotdog roll</li>
+                        <li>Chicken hotdog roll</li>
+                    </ul>
+                </div>
+                
+                <!-- Pizzas & Toasts -->
+                <div class="menu-category" data-category="puffs">
+                    <h3>Pizzas & Toasts</h3>
+                    <ul>
+                        <li>Veg Toast</li>
+                        <li>Chicken Toast</li>
+                        <li>Paneer pizza</li>
+                        <li>Chicken pizza</li>
+                    </ul>
+                </div>
+                
+                <!-- Buns & Bakery Snacks -->
+                <div class="menu-category" data-category="breads">
+                    <h3>Buns & Snacks</h3>
+                    <ul>
+                        <li>Cream Bun</li>
+                        <li>Dilpasand</li>
+                        <li>Dipasand large pieces</li>
+                        <li>Dilkhush</li>
+                        <li>Cream Roll</li>
+                        <li>Fruit Roll</li>
+                        <li>Small Buns</li>
+                        <li>Large Buns</li>
+                        <li>Pav Bhaji Buns</li>
+                    </ul>
+                </div>
+
+                <!-- Bread & Biscuits -->
+                <div class="menu-category" data-category="breads">
+                    <h3>Breads & Biscuits</h3>
+                    <ul>
+                        <li>Small Bread</li>
+                        <li>Large Bread</li>
+                        <li>Fine biscuits</li>
+                        <li>Cookies</li>
+                        <li>Rusk biscuits</li>
+                        <li>Khari</li>
+                    </ul>
+                </div>
+                
+                <!-- Cakes -->
+                <div class="menu-category" data-category="cakes">
+                    <h3>Cakes</h3>
+                    <ul>
+                        <li>Plum cakes</li>
+                        <li>Normal cakes</li>
+                        <li>Cup Cakes</li>
+                    </ul>
+                </div>
+                
+                <!-- Cool Cakes -->
+                <div class="menu-category" data-category="cakes">
+                    <h3>Cool Cakes – Flavours</h3>
+                    <ul>
+                        <li>Pineapple</li>
+                        <li>Strawberry</li>
+                        <li>Blueberry</li>
+                        <li>Butterscotch</li>
+                        <li>Black Currant</li>
+                        <li>Green Apple</li>
+                        <li>Black Forest</li>
+                        <li>Chocolate</li>
+                        <li>Almond</li>
+                        <li>Pista</li>
+                        <li>Red Velvet</li>
+                        <li>Chocolate Truffle</li>
+                    </ul>
+                </div>
+                
+                <!-- Pastries -->
+                <div class="menu-category" data-category="cakes">
+                    <h3>Pastries</h3>
+                    <ul>
+                        <li>Pineapple</li>
+                        <li>Strawberry</li>
+                        <li>Butterscotch</li>
+                        <li>Black Forest</li>
+                        <li>Chocolate</li>
+                    </ul>
+                </div>
+
+                <!-- Specials -->
+                <div class="menu-category" data-category="specials">
+                    <h3>Specials & Non-Veg</h3>
+                    <ul>
+                        <li>Choco Lava</li>
+                        <li>Donuts</li>
+                        <li>Chicken Drumsticks</li>
+                        <li>Chicken 65</li>
+                        <li>Chicken Leg Piece</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container fade-in">
+            <div class="section-header">
+                <h2>Our Gallery</h2>
+                <p>A glimpse of our delicious offerings</p>
+            </div>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Delicious Cakes" loading="lazy">
+                    <div class="gallery-overlay"><span>Cakes</span></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1596803244618-8dbee441d70b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Fresh Cupcakes" loading="lazy">
+                    <div class="gallery-overlay"><span>Cupcakes</span></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1495147466023-af5c19cbbfc1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Cookies and Biscuits" loading="lazy">
+                    <div class="gallery-overlay"><span>Cookies</span></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1549448882-7e0e7a16b9b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Delicious Hotdog Rolls" loading="lazy">
+                    <div class="gallery-overlay"><span>Hotdog Rolls</span></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Fresh Breads" loading="lazy">
+                    <div class="gallery-overlay"><span>Breads & Buns</span></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Bakery Snacks" loading="lazy">
+                    <div class="gallery-overlay"><span>Bakery Snacks</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact bg-light">
+        <div class="container fade-in">
+            <div class="section-header">
+                <h2>Visit Us Today</h2>
+                <p>We'd love to serve you the best treats in town!</p>
+            </div>
+            
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fas fa-store"></i></div>
+                        <div>
+                            <h3>Shop Name</h3>
+                            <p>7 Hills Bakery</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fas fa-clock"></i></div>
+                        <div>
+                            <h3>Timings</h3>
+                            <p>7:00 AM – 10:00 PM</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fab fa-whatsapp"></i></div>
+                        <div>
+                            <h3>WhatsApp / Phone</h3>
+                            <p><a href="tel:+919032326119">+91 9032326119</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-actions">
+                        <a href="tel:+919032326119" class="btn btn-outline"><i class="fas fa-phone-alt"></i> Call Now</a>
+                        <a href="https://wa.me/919032326119" target="_blank" class="btn btn-primary"><i class="fab fa-whatsapp"></i> Order on WhatsApp</a>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <form id="contactForm" class="contact-form">
+                        <h3>Send us a Message</h3>
+                        <div class="form-group">
+                            <input type="text" id="name" required placeholder="Your Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" required placeholder="Your Phone Number">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" rows="4" required placeholder="Your Message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-secondary w-100">Send Message</button>
+                    </form>
+                </div>
+            </div>
+            
+            <!-- Map -->
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15227.140884638337!2d78.43577319999999!3d17.42211995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9747209ce435%3A0xe67efcae0f2dc28d!2s7%20Hills%20Bakery!5e0!3m2!1sen!2sin!4v1703270000000!5m2!1sen!2sin" 
+                    width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+                <div class="map-link-container">
+                    <a href="https://maps.app.goo.gl/DEJ8NDGe4MmHzvsA7?g_st=aw" target="_blank" class="map-link">
+                        <i class="fas fa-map-marker-alt"></i> Open in Google Maps
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-logo">
+                <h2>7 Hills <span>Bakery</span></h2>
+                <p>Where every bite brings joy, freshness, and flavor.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-phone-alt"></i> +91 90323 26119</p>
+                <p><i class="fas fa-clock"></i> 7 AM - 10 PM</p>
+                <p>
+                    <a href="https://maps.app.goo.gl/DEJ8NDGe4MmHzvsA7?g_st=aw" target="_blank" class="text-white">
+                        <i class="fas fa-map-marker-alt"></i> Get Directions
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 7 Hills Bakery. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Sticky WhatsApp Floating Button -->
+    <a href="https://wa.me/919032326119" class="floating-wa" target="_blank" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
