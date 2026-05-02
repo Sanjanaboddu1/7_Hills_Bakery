@@ -110,26 +110,44 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Simple Form Submission Handler
+    // WhatsApp Form Submission Handler
     const contactForm = document.getElementById('contactForm');
     if (contactForm) {
         contactForm.addEventListener('submit', (e) => {
             e.preventDefault();
             
+            // Get form values
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+            const message = document.getElementById('message').value;
+            
+            // Format the WhatsApp message
+            const whatsappNumber = '919032326119';
+            const rawMessage = `New website inquiry for 7 Hills Bakery:\n\nName: ${name}\nPhone: ${phone}\n\nMessage:\n${message}`;
+            
+            // Encode the message to properly handle emojis, spaces, and new lines
+            const encodedMessage = encodeURIComponent(rawMessage);
+            
+            // Create the WhatsApp URL
+            const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+            
             const btn = contactForm.querySelector('button[type="submit"]');
             const originalText = btn.innerHTML;
             
-            btn.innerHTML = '<i class="fas fa-check"></i> Message Sent!';
+            btn.innerHTML = '<i class="fab fa-whatsapp"></i> Opening WhatsApp...';
             btn.style.backgroundColor = '#25D366';
             btn.style.color = 'white';
             
-            contactForm.reset();
+            // Open WhatsApp in a new tab
+            window.open(whatsappUrl, '_blank');
             
+            // Reset form after a short delay
             setTimeout(() => {
+                contactForm.reset();
                 btn.innerHTML = originalText;
                 btn.style.backgroundColor = '';
                 btn.style.color = '';
-            }, 3000);
+            }, 2000);
         });
     }
 });
