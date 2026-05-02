@@ -13,19 +13,25 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://7hillsbakerygajwel.com/about.html">
+    <meta property="og:title" content="Our Story | 7 Hills Bakery">
+    <meta property="og:description" content="Discover the passion and history behind 7 Hills Bakery. We bring you freshly baked joy every day.">
+    <meta property="og:image" content="images/pic2.jpeg">
     <style>
         .about-page-hero {
-            padding: 120px 0 60px;
+            padding: 100px 20px 40px;
             text-align: center;
-            background-color: var(--light-color);
+            background-color: var(--soft-pink);
         }
         .about-page-hero h1 {
-            color: var(--primary-color);
+            color: var(--navy-blue);
             margin-bottom: 20px;
             font-size: 3rem;
         }
         .about-details {
-            padding: 60px 0;
+            padding: 60px 20px;
         }
         .about-story {
             display: flex;
@@ -37,7 +43,7 @@
             flex: 1;
         }
         .about-story-text h2 {
-            color: var(--secondary-color);
+            color: var(--bakery-brown);
             margin-bottom: 20px;
             font-size: 2.5rem;
         }
@@ -52,20 +58,20 @@
         .about-story-img img {
             width: 100%;
             border-radius: 12px;
-            box-shadow: var(--shadow);
+            box-shadow: var(--box-shadow);
         }
         .bakery-photos {
             text-align: center;
             margin-top: 60px;
         }
         .bakery-photos h3 {
-            color: var(--primary-color);
+            color: var(--bakery-brown);
             font-size: 2rem;
             margin-bottom: 30px;
         }
         .photo-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
             gap: 20px;
         }
         .photo-grid img {
@@ -82,6 +88,13 @@
         @media (max-width: 768px) {
             .about-story {
                 flex-direction: column;
+                gap: 20px;
+            }
+            .about-page-hero h1 {
+                font-size: 2.5rem;
+            }
+            .about-story-text h2 {
+                font-size: 2rem;
             }
         }
     </style>

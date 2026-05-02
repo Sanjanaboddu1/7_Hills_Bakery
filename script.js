@@ -117,13 +117,24 @@ document.addEventListener('DOMContentLoaded', () => {
             e.preventDefault();
             
             // Get form values
-            const name = document.getElementById('name').value;
-            const phone = document.getElementById('phone').value;
-            const message = document.getElementById('message').value;
+            const name = document.getElementById('name').value.trim();
+            const phone = document.getElementById('phone').value.trim();
+            const message = document.getElementById('message').value.trim();
+            
+            // Basic Validation
+            if (!name || !message) {
+                alert('Please provide both your Name and a Message so we can help you better!');
+                return;
+            }
+
+            if (phone && !/^\d{10}$/.test(phone.replace(/\D/g, ''))) {
+                alert('Please enter a valid 10-digit phone number.');
+                return;
+            }
             
             // Format the WhatsApp message
             const whatsappNumber = '919032326119';
-            const rawMessage = `New website inquiry for 7 Hills Bakery:\n\nName: ${name}\nPhone: ${phone}\n\nMessage:\n${message}`;
+            const rawMessage = `New website inquiry for 7 Hills Bakery:\n\nName: ${name}\nPhone: ${phone || 'Not provided'}\n\nMessage:\n${message}`;
             
             // Encode the message to properly handle emojis, spaces, and new lines
             const encodedMessage = encodeURIComponent(rawMessage);
