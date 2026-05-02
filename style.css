@@ -857,6 +857,15 @@ footer {
     .contact-actions {
         flex-direction: column;
     }
+    
+    .review-card {
+        width: 280px;
+        padding: 20px;
+    }
+    
+    .review-text {
+        font-size: 0.95rem;
+    }
 }
 
 @media (max-width: 576px) {
