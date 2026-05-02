@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About 7 Hills Bakery - Our story, history, and freshly baked happiness.">
+    <title>About Us | 7 Hills Bakery</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .about-page-hero {
+            padding: 120px 0 60px;
+            text-align: center;
+            background-color: var(--light-color);
+        }
+        .about-page-hero h1 {
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            font-size: 3rem;
+        }
+        .about-details {
+            padding: 60px 0;
+        }
+        .about-story {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+        .about-story-text {
+            flex: 1;
+        }
+        .about-story-text h2 {
+            color: var(--secondary-color);
+            margin-bottom: 20px;
+            font-size: 2.5rem;
+        }
+        .about-story-text p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+        .about-story-img {
+            flex: 1;
+        }
+        .about-story-img img {
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+        }
+        .bakery-photos {
+            text-align: center;
+            margin-top: 60px;
+        }
+        .bakery-photos h3 {
+            color: var(--primary-color);
+            font-size: 2rem;
+            margin-bottom: 30px;
+        }
+        .photo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .photo-grid img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 12px;
+            transition: var(--transition);
+        }
+        .photo-grid img:hover {
+            transform: scale(1.05);
+        }
+        
+        @media (max-width: 768px) {
+            .about-story {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">7 Hills <span>Bakery</span></a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="index.html#menu">Menu</a></li>
+                    <li><a href="index.html#gallery">Gallery</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <section class="about-page-hero fade-in">
+        <div class="container">
+            <h1>Our Story</h1>
+            <p>Discover the passion and history behind 7 Hills Bakery</p>
+        </div>
+    </section>
+
+    <section class="about-details container fade-in">
+        <div class="about-story">
+            <div class="about-story-text">
+                <h2>Freshness in Every Bite</h2>
+                <p>Welcome to <strong>7 Hills Bakery</strong>! We are dedicated to bringing you the finest, freshest, and most delicious baked goods in town. From our crispy hot puffs to our rich, melt-in-your-mouth cakes, every item is crafted with love and high-quality ingredients.</p>
+                <p>We believe that a good bakery is the heart of a neighborhood. Whether you are grabbing a quick morning bun, ordering a custom cake for a special celebration, or treating yourself to an evening cream roll, we strive to make every moment sweeter.</p>
+                <p>Our kitchen maintains the highest standards of hygiene and authenticity, ensuring that the traditional tastes you love remain exactly how they should be.</p>
+                <a href="index.html#contact" class="btn btn-primary mt-3">Visit Our Bakery</a>
+            </div>
+            <div class="about-story-img">
+                <img src="images/pic2.jpeg" alt="Inside 7 Hills Bakery" loading="lazy">
+            </div>
+        </div>
+
+        <div class="bakery-photos">
+            <h3>Glimpses of Our Bakery</h3>
+            <div class="photo-grid">
+                <img src="images/pic1.jpeg" alt="Bakery Photo 1">
+                <img src="images/pic3.jpeg" alt="Bakery Photo 2">
+                <img src="images/pic4.jpeg" alt="Bakery Photo 3">
+            </div>
+            <p style="margin-top: 40px; font-size: 1.1rem; line-height: 1.8; color: var(--text-color); max-width: 800px; margin-left: auto; margin-right: auto;">
+                Step inside <strong>7 Hills Bakery</strong> and experience the warm, inviting aroma of freshly baked goods. We take immense pride in our beautifully arranged display counters, showcasing a wide variety of sweet and savory treats baked daily. Our clean, welcoming environment ensures a pleasant visit every time, whether you're picking up your favorite daily bread or choosing a special cake for a celebration. From our kitchen to the display counter, we put our heart into every detail so you can enjoy the best!
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-logo">
+                <h2>7 Hills <span>Bakery</span></h2>
+                <p>Where every bite brings joy, freshness, and flavor.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="index.html#menu">Menu</a></li>
+                    <li><a href="index.html#gallery">Gallery</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-phone-alt"></i> +91 90323 26119</p>
+                <p><i class="fas fa-clock"></i> 7 AM - 10 PM</p>
+                <p>
+                    <a href="https://www.google.com/maps/place/7+HILLS+BAKERY,+Rajiv+Park+Road,+Near+NTR+Statue,+Opp:,+Doulatabad+-+Gajwel+Rd,+Gajwel,+Telangana+502278/data=!4m2!3m1!1s0x3bcc873966e0f987:0x584c454241b28f35" target="_blank" class="text-white">
+                        <i class="fas fa-map-marker-alt"></i> Get Directions
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 7 Hills Bakery. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
